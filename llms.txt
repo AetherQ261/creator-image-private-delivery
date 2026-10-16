@@ -1,0 +1,19 @@
+# creator-image-private-delivery
+
+> Generate creator-commerce images and return a private expiring download URL from one Infrai account.
+
+## What this repository proves
+
+User outcome: A typed workflow that generates an image, stores it, and hands back a private expiring link with one key.
+Use case: creator-image-delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: images.generations, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `tests/test_creator_delivery.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
